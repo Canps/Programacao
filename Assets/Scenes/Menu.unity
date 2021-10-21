@@ -821,8 +821,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 162}
-  m_SizeDelta: {x: 916.3274, y: -668.431}
+  m_AnchoredPosition: {x: 0, y: 147.07068}
+  m_SizeDelta: {x: 916.3274, y: -558.9487}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033638089
 MonoBehaviour:
@@ -857,7 +857,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nome do jogo
+  m_Text: Enchanted Forest
 --- !u!222 &1033638090
 CanvasRenderer:
   m_ObjectHideFlags: 0
