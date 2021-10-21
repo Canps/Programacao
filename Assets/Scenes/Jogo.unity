@@ -6012,6 +6012,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 826486828324074757, guid: 6e82d90f4ba5ed845b753a158873f013, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5381949571080293085, guid: f53348368b249344594d13471e60d327, type: 3}
+    - target: {fileID: 826486828324074757, guid: 6e82d90f4ba5ed845b753a158873f013, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 826486828324074757, guid: 6e82d90f4ba5ed845b753a158873f013, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 826486828324074757, guid: 6e82d90f4ba5ed845b753a158873f013, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e82d90f4ba5ed845b753a158873f013, type: 3}
 --- !u!1001 &8078368158503063721
