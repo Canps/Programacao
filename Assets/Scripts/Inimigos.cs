@@ -86,7 +86,7 @@ public class Inimigos : MonoBehaviour
 
         index++;
         tempo = 1;
-        intervalo = 5;
+        intervalo = 2;
         switch (rand)
         {
             case 1:
