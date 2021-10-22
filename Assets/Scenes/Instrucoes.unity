@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -390, y: 504}
-  m_SizeDelta: {x: 396.31, y: 238.1343}
+  m_AnchoredPosition: {x: -325, y: 413.99997}
+  m_SizeDelta: {x: 368.2021, y: 239.5206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399885085
 MonoBehaviour:
@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f4c99a340a6e6504aa6e992b7a253612, type: 3}
-    m_FontSize: 90
+    m_FontSize: 78
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 9
@@ -319,8 +319,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 342.49, y: 504}
-  m_SizeDelta: {x: 440.81592, y: 238.13428}
+  m_AnchoredPosition: {x: 297, y: 414}
+  m_SizeDelta: {x: 395.8344, y: 213.8347}
   m_Pivot: {x: 0.5, y: 0.49999994}
 --- !u!114 &704305241
 MonoBehaviour:
@@ -543,8 +543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000024796, y: 34.152}
-  m_SizeDelta: {x: 899.0802, y: 870.17}
+  m_AnchoredPosition: {x: 0.000024796, y: 135.08}
+  m_SizeDelta: {x: 899.0802, y: 668.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1250903658
 MonoBehaviour:
@@ -568,7 +568,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d1fe0bc1ac9782f4c8f875e1a7cea6d7, type: 3}
-    m_FontSize: 90
+    m_FontSize: 68
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -580,7 +580,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Deslize o dedo ou use as setas para navegar por uma grade de 3x3, desviando
-    de proj\xE9teis e coletando power-ups."
+    de proj\xE9teis para sobreviver o m\xE1ximo de tempo poss\xEDvel."
 --- !u!222 &1250903659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -623,8 +623,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -305}
-  m_SizeDelta: {x: 1125.8032, y: 369.9403}
+  m_AnchoredPosition: {x: 0, y: -153}
+  m_SizeDelta: {x: 1080, y: 195.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317435860
 MonoBehaviour:
@@ -648,7 +648,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f4c99a340a6e6504aa6e992b7a253612, type: 3}
-    m_FontSize: 168
+    m_FontSize: 135
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -804,10 +804,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1015,11 +1015,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3015869747145573554, guid: 7d72fb5de82d30a45a3fcae62f543dd8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 34.258
+      value: 28.071
       objectReference: {fileID: 0}
     - target: {fileID: 3015869747145573554, guid: 7d72fb5de82d30a45a3fcae62f543dd8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 14.123
+      value: 11.572
       objectReference: {fileID: 0}
     - target: {fileID: 3015869747145573554, guid: 7d72fb5de82d30a45a3fcae62f543dd8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1063,11 +1063,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3015869747241428085, guid: 7d72fb5de82d30a45a3fcae62f543dd8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 34.2575
+      value: 28.0713
       objectReference: {fileID: 0}
     - target: {fileID: 3015869747241428085, guid: 7d72fb5de82d30a45a3fcae62f543dd8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 14.1225
+      value: 11.5722
       objectReference: {fileID: 0}
     - target: {fileID: 3015869747241428085, guid: 7d72fb5de82d30a45a3fcae62f543dd8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1103,7 +1103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3015869747241428085, guid: 7d72fb5de82d30a45a3fcae62f543dd8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 504
+      value: 414
       objectReference: {fileID: 0}
     - target: {fileID: 3015869747241428085, guid: 7d72fb5de82d30a45a3fcae62f543dd8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
