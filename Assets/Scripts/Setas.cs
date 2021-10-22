@@ -7,7 +7,7 @@ public class Setas : MonoBehaviour
     public GameObject setas;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

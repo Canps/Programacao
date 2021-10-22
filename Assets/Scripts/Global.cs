@@ -14,7 +14,7 @@ public class Global : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     public void Trocar()
@@ -25,5 +25,40 @@ public class Global : MonoBehaviour
     public void Pausar()
     {
         pausado = !pausado;
+    }
+
+    public void Submit()
+    {
+        Recordes.pontos[5] = pontos;
+        if (Recordes.pontos[5] > Recordes.pontos[0])
+        {
+            Recordes.pontos[4] = Recordes.pontos[3];
+            Recordes.pontos[3] = Recordes.pontos[2];
+            Recordes.pontos[2] = Recordes.pontos[1];
+            Recordes.pontos[1] = Recordes.pontos[0];
+            Recordes.pontos[0] = Recordes.pontos[5];
+        }
+        else if (Recordes.pontos[5] > Recordes.pontos[1])
+        {
+            Recordes.pontos[4] = Recordes.pontos[3];
+            Recordes.pontos[3] = Recordes.pontos[2];
+            Recordes.pontos[2] = Recordes.pontos[1];
+            Recordes.pontos[1] = Recordes.pontos[5];
+        }
+        else if (Recordes.pontos[5] > Recordes.pontos[2])
+        {
+            Recordes.pontos[4] = Recordes.pontos[3];
+            Recordes.pontos[3] = Recordes.pontos[2];
+            Recordes.pontos[2] = Recordes.pontos[5];
+        }
+        else if (Recordes.pontos[5] > Recordes.pontos[3])
+        {
+            Recordes.pontos[4] = Recordes.pontos[3];
+            Recordes.pontos[3] = Recordes.pontos[5];
+        }
+        else if (Recordes.pontos[5] > Recordes.pontos[4])
+        {
+            Recordes.pontos[4] = Recordes.pontos[5];
+        }
     }
 }

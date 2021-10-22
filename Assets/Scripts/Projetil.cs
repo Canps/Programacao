@@ -18,19 +18,19 @@ public class Projetil : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(esquerda)
+        if (esquerda)
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector3(transform.position.x + 1, transform.position.y), Time.deltaTime * vel);
         }
-        if(direita)
+        if (direita)
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector3(transform.position.x - 1, transform.position.y), Time.deltaTime * vel);
         }
-        if(cima)
+        if (cima)
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector3(transform.position.x, transform.position.y - 1), Time.deltaTime * vel);
         }
-        
+
     }
 
     public void Centralizar()

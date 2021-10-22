@@ -33,8 +33,10 @@ public class Cenas : MonoBehaviour
     {
         SceneManager.LoadScene("Jogo", LoadSceneMode.Single);
     }
-    public void Pause()
+    public void Recordes()
     {
-        SceneManager.LoadScene("Pause");
+        SceneManager.LoadScene("Records", LoadSceneMode.Single);
     }
+
+
 }
