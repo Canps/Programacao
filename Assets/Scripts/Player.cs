@@ -59,12 +59,12 @@ public class Player : MonoBehaviour
     {
         moveu = true;
         //transform.position += Vector3.up;
-        if(index > 2)
+        if (index > 2)
         {
             index -= 3;
             transform.position = grade[index].transform.position;
         }
-        
+
     }
 
     public void Baixo()
@@ -84,7 +84,7 @@ public class Player : MonoBehaviour
         //transform.position += Vector3.left;
         if (index != 0 && index != 3 && index != 6)
         {
-            index --;
+            index--;
             transform.position = grade[index].transform.position;
         }
     }
@@ -95,14 +95,14 @@ public class Player : MonoBehaviour
         //transform.position += Vector3.right;
         if (index != 2 && index != 5 && index != 8)
         {
-            index ++;
+            index++;
             transform.position = grade[index].transform.position;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Inimigo"))
+        if (collision.CompareTag("Inimigo"))
         {
             Global.pausado = true;
             perdeu.SetActive(true);

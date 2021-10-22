@@ -3,26 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Toog : MonoBehaviour
+public class HighScore : MonoBehaviour
 {
-    public Sprite esquerda;
-    public Sprite direita;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Global.setas)
+        if(Global.pontos <= Recordes.pontos[0])
         {
-            GetComponent<Image>().sprite = direita;
+            GetComponent<Text>().text = Recordes.pontos[0].ToString();
         }
-        else
+        else if(Global.pontos > Recordes.pontos[0])
         {
-            GetComponent<Image>().sprite = esquerda;
+            GetComponent<Text>().text = Global.pontos.ToString();
         }
+        
     }
 }

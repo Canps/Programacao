@@ -31,35 +31,35 @@ public class Inimigos : MonoBehaviour
         {
             tempo = 0;
             index = 0;
-            foreach(GameObject a in avisos)
+            foreach (GameObject a in avisos)
             {
                 a.SetActive(false);
             }
         }
-        
+
         if (intervalo > 0)
         {
             intervalo -= Time.deltaTime;
         }
         else
         {
-            
+
             foreach (GameObject a in tiros)
             {
                 a.GetComponent<Projetil>().Centralizar();
                 a.SetActive(false);
             }
             intervalo = 0;
-            if (Global.pontos < 10)
+            if (Global.pontos < 30)
             {
                 Invocar();
             }
-            else if (Global.pontos < 20)
+            else if (Global.pontos < 60)
             {
-                Invocar(); 
+                Invocar();
                 Invocar();
             }
-            else if (Global.pontos < 30)
+            else if (Global.pontos < 100)
             {
                 Invocar();
                 Invocar();
@@ -79,44 +79,44 @@ public class Inimigos : MonoBehaviour
 
     void Invocar()
     {
-        rand = Random.Range(1,10);
+        rand = Random.Range(1, 10);
         aviso[index] = rand;
         Verificar();
         rand = aviso[index];
-        
-            index++;
-            tempo = 1;
-            intervalo = 5;
-            switch (rand)
-            {
-                case 1:
-                    InfEsq();
-                    break;
-                case 2:
-                    CenEsq();
-                    break;
-                case 3:
-                    SupEsq();
-                    break;
-                case 4:
-                    EsqCima();
-                    break;
-                case 5:
-                    CenCima();
-                    break;
-                case 6:
-                    DirCima();
-                    break;
-                case 7:
-                    SupDir();
-                    break;
-                case 8:
-                    CenDir();
-                    break;
-                case 9:
-                    InfDir();
-                    break;
-            }
+
+        index++;
+        tempo = 1;
+        intervalo = 5;
+        switch (rand)
+        {
+            case 1:
+                InfEsq();
+                break;
+            case 2:
+                CenEsq();
+                break;
+            case 3:
+                SupEsq();
+                break;
+            case 4:
+                EsqCima();
+                break;
+            case 5:
+                CenCima();
+                break;
+            case 6:
+                DirCima();
+                break;
+            case 7:
+                SupDir();
+                break;
+            case 8:
+                CenDir();
+                break;
+            case 9:
+                InfDir();
+                break;
+        }
     }
 
     void InfEsq()
@@ -167,9 +167,9 @@ public class Inimigos : MonoBehaviour
 
     void Verificar()
     {
-        if(index == 1)
+        if (index == 1)
         {
-            if(aviso[1] == aviso[0])
+            if (aviso[1] == aviso[0])
             {
                 if (aviso[1] != 9)
                     aviso[1]++;
@@ -177,18 +177,9 @@ public class Inimigos : MonoBehaviour
                     aviso[1] = 1;
             }
         }
-        else if(index == 2)
+        else if (index == 2)
         {
-            if(aviso[2] == aviso[0] || aviso[2] == aviso[1])
-            {
-                if (aviso[2] != 9)
-                    aviso[2]++;
-                else
-                    aviso[2] = 1;
-                Verificar();
-            }
-            
-            if(aviso[0] + aviso[1] + aviso[2] == 6 || aviso[0] + aviso[1] + aviso[2] == 24)
+            if (aviso[2] == aviso[0] || aviso[2] == aviso[1])
             {
                 if (aviso[2] != 9)
                     aviso[2]++;
@@ -197,7 +188,16 @@ public class Inimigos : MonoBehaviour
                 Verificar();
             }
 
-            if(aviso[0] > 3 && aviso[0] < 7 && aviso[1] > 3 && aviso[1] < 7 && aviso[2] > 3 && aviso[2] < 7)
+            if (aviso[0] + aviso[1] + aviso[2] == 6 || aviso[0] + aviso[1] + aviso[2] == 24)
+            {
+                if (aviso[2] != 9)
+                    aviso[2]++;
+                else
+                    aviso[2] = 1;
+                Verificar();
+            }
+
+            if (aviso[0] > 3 && aviso[0] < 7 && aviso[1] > 3 && aviso[1] < 7 && aviso[2] > 3 && aviso[2] < 7)
             {
                 if (aviso[2] != 9)
                     aviso[2]++;
@@ -206,7 +206,7 @@ public class Inimigos : MonoBehaviour
                 Verificar();
             }
         }
-        else if(index == 3)
+        else if (index == 3)
         {
             if (aviso[3] == aviso[0] || aviso[3] == aviso[1] || aviso[3] == aviso[2])
             {
@@ -217,9 +217,9 @@ public class Inimigos : MonoBehaviour
                 Verificar();
             }
 
-            if(aviso[3] < 4)
+            if (aviso[3] < 4)
             {
-                if((aviso[0] < 4 && aviso[1] < 4) || (aviso[2] < 4 && aviso[1] < 4) || (aviso[0] < 4 && aviso[2] < 4))
+                if ((aviso[0] < 4 && aviso[1] < 4) || (aviso[2] < 4 && aviso[1] < 4) || (aviso[0] < 4 && aviso[2] < 4))
                 {
                     if (aviso[3] != 9)
                         aviso[3]++;
@@ -228,7 +228,7 @@ public class Inimigos : MonoBehaviour
                     Verificar();
                 }
             }
-            else if(aviso[3] > 6)
+            else if (aviso[3] > 6)
             {
                 if ((aviso[0] > 6 && aviso[1] > 6) || (aviso[2] > 6 && aviso[1] > 6) || (aviso[0] > 6 && aviso[2] > 6))
                 {
@@ -239,7 +239,7 @@ public class Inimigos : MonoBehaviour
                     Verificar();
                 }
             }
-            else if(aviso[3] < 7 && aviso[3] > 3)
+            else if (aviso[3] < 7 && aviso[3] > 3)
             {
                 if (((aviso[0] < 7 && aviso[0] > 3) && (aviso[1] < 7 && aviso[1] > 3)) || ((aviso[0] < 7 && aviso[0] > 3) && (aviso[2] < 7 && aviso[2] > 3)) || ((aviso[1] < 7 && aviso[1] > 3) && (aviso[2] < 7 && aviso[2] > 3)))
                 {
